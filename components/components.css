@@ -159,7 +159,7 @@ body.dark-theme .footer-info {
 .footer-info-box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.5rem 2rem;
   width: 100%;
 }
@@ -185,6 +185,25 @@ body.dark-theme .footer-info {
 .copyright a:hover {
   text-decoration-color: white;
   color: white;
+}
+
+.email-link {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.email-link a {
+  color: #888;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.email-link a:hover {
+  color: #88E5AB;
 }
 
 /* Social Icons */
