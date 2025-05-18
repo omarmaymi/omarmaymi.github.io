@@ -534,12 +534,6 @@ const images = [
     "date": "2025-05-18"
   },
   {
-    "src": "/assets/photography/thumbnails/thumb_OMR00098.webp",
-    "fullsize": "/assets/photography/OMR00098.jpg",
-    "alt": "Omr00098",
-    "date": "2025-05-18"
-  },
-  {
     "src": "/assets/photography/thumbnails/thumb_OMR00102.webp",
     "fullsize": "/assets/photography/OMR00102.jpg",
     "alt": "Omr00102",
