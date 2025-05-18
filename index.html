@@ -43,16 +43,50 @@
             <div class="col col-12">
               <div class="hero-inner">
                 <div class="hero-left">
-                  <h2 class="hero-hello">HELLO, I'M</h2>
-                  <h1 class="hero-title">OMAR MAYMI</h1>
-                  <p class="hero-subtitle">
-                    A designer and developer based in North Carolina showcasing their work.
-                  </p>
-                  <a href="/projects" class="hero-button">VIEW PROJECTS</a>
+                  <h1 class="hero-title">
+                    <span class="title-line">OMAR</span>
+                    <span class="title-line">MAYMI</span>
+                  </h1>
+                  <div class="hero-content">
+                    <div class="hero-card">
+                      <div class="card-content">
+                        <p class="hero-subtitle">
+                          Omar Maymi is a designer & creative based in the US currently working as at Streamlabs at Logitech doing Visual Development. Over the past ten years, he has worked with clients such as Logitech, KASKADE, Joe Jonas, St. Judes, and many more. He is seeking opportunities with ambition to learn and tell compelling and engaging stories.
+                        </p>
+                      </div>
+                      <div class="hero-info">
+                        <div class="info-item">
+                          <span class="info-label">Based In</span>
+                          <span class="info-value">North Carolina, US</span>
+                        </div>
+                        <div class="info-item">
+                          <span class="info-label">Experience</span>
+                          <span class="info-value">10+ Years</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="hero-right">
-                  <div class="hero-image">
-                    <img src="./assets/hero-image.webp" alt="hero-image" class="lazy" />
+                <div class="hero-media">
+                  <div class="media-container">
+                    <video 
+                      autoplay 
+                      muted 
+                      loop 
+                      playsinline
+                      class="hero-video"
+                      onerror="this.style.display='none'; document.getElementById('youtube-fallback').style.display='block';">
+                      <source src="./assets/hero-video.mp4" type="video/mp4">
+                    </video>
+                    <iframe 
+                      id="youtube-fallback"
+                      src="https://www.youtube.com/embed/88Bz9ThpC9o?autoplay=1&mute=1&loop=1&playlist=88Bz9ThpC9o&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
+                      title="Background Video"
+                      frameborder="0"
+                      style="display: none;"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
                   </div>
                 </div>
               </div>

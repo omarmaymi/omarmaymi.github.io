@@ -1,7 +1,18 @@
 /* Global Styles */
 * {
   box-sizing: border-box;
-  cursor: none !important;
+}
+
+body {
+  cursor: none;
+}
+
+body.devtools-open .cursor {
+  display: none;
+}
+
+body.devtools-open {
+  cursor: auto;
 }
 
 a {
