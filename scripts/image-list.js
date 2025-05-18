@@ -534,12 +534,6 @@ const images = [
     "date": "2025-05-18"
   },
   {
-    "src": "/assets/photography/thumbnails/thumb_OMR00102.webp",
-    "fullsize": "/assets/photography/OMR00102.jpg",
-    "alt": "Omr00102",
-    "date": "2025-05-18"
-  },
-  {
     "src": "/assets/photography/thumbnails/thumb_OMR00656-1.webp",
     "fullsize": "/assets/photography/OMR00656-1.JPG",
     "alt": "Omr00656-1",
@@ -699,12 +693,6 @@ const images = [
     "src": "/assets/photography/thumbnails/thumb_dsc05147.webp",
     "fullsize": "/assets/photography/dsc05147.JPG",
     "alt": "Dsc05147",
-    "date": "2025-05-18"
-  },
-  {
-    "src": "/assets/photography/thumbnails/thumb_dsc05148.webp",
-    "fullsize": "/assets/photography/dsc05148.JPG",
-    "alt": "Dsc05148",
     "date": "2025-05-18"
   },
   {
