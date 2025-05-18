@@ -5,7 +5,7 @@ from pathlib import Path
 def convert_to_webp(source_dir, quality=80):
     # Create output directory if it doesn't exist
     output_dir = Path(source_dir).parent / 'photography_webp'
-    output_dir.mkdir(exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     # Get all jpg files
     jpg_files = [f for f in os.listdir(source_dir) if f.lower().endswith(('.jpg', '.jpeg'))]
@@ -30,5 +30,5 @@ def convert_to_webp(source_dir, quality=80):
         print(f'Converted {jpg_file} to {webp_filename}')
 
 if __name__ == '__main__':
-    source_directory = '../assets/photography'
+    source_directory = 'assets/photography'
     convert_to_webp(source_directory) 

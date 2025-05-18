@@ -39,4 +39,19 @@
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
     color: #333;
+}
+
+/* Error states */
+.gallery-item.error {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-message {
+    color: #666;
+    text-align: center;
+    padding: 1rem;
 } 
