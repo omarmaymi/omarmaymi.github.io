@@ -17,17 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   lazyImages.forEach(lazyLoad);
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the scroll-to-top button
-    const topButton = document.querySelector('.top');
-    
-    // Add click event listener
-    topButton.addEventListener('click', function() {
-        // Smooth scroll to top
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-});

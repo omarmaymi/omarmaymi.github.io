@@ -1,6 +1,7 @@
 /* Global Styles */
 * {
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 a {
@@ -237,4 +238,62 @@ body.dark-theme .top:hover {
 .top .material-symbols-sharp {
   font-size: 20px;
   line-height: 36px;
+}
+
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+/* Cursor states */
+a:hover ~ .cursor .cursor-dot,
+button:hover ~ .cursor .cursor-dot,
+.social-button:hover ~ .cursor .cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+/* Cursor states */
+a:hover ~ .cursor .cursor-dot,
+button:hover ~ .cursor .cursor-dot,
+.social-button:hover ~ .cursor .cursor-dot,
+.top:hover ~ .cursor .cursor-dot {
+  width: 12px;
+  height: 12px;
+}
+
+a:hover ~ .cursor .cursor-outline,
+button:hover ~ .cursor .cursor-outline,
+.social-button:hover ~ .cursor .cursor-outline,
+.top:hover ~ .cursor .cursor-outline {
+  width: 50px;
+  height: 50px;
+  border-color: #88E5AB;
 } 

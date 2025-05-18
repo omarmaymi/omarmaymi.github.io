@@ -34,4 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Initialize scroll to top after footer is loaded
       handleScrollToTop();
     });
+
+  // Load cursor
+  loadComponent('cursor-placeholder', '/components/cursor.html')
+    .then(() => {
+      const script = document.createElement('script');
+      script.src = '/components/cursor.js';
+      document.body.appendChild(script);
+    });
 }); 
