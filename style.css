@@ -148,6 +148,59 @@ img {
   .hero {
     padding: 16px 0;
   }
+  .hero-inner {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 8px;
+    align-items: stretch;
+  }
+  .hero-left, .hero-media {
+    flex: unset;
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+  .hero-card {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 24px;
+    max-width: 100%;
+  }
+  .card-content {
+    max-width: 100%;
+  }
+  .hero-info {
+    padding-left: 0;
+    padding-top: 32px;
+    min-width: 0;
+  }
+  .hero-info::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    height: 1px;
+    width: auto;
+  }
+  .media-container {
+    aspect-ratio: 16/9;
+    width: 100%;
+    min-height: 180px;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .hero-video,
+  .media-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+  }
 }
 
 .hero-inner {
@@ -263,8 +316,18 @@ img {
   flex-direction: column;
   gap: 24px;
   padding-left: 60px;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
   min-width: 220px;
+  position: relative;
+}
+
+.hero-info::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .info-item {
@@ -281,7 +344,7 @@ img {
 }
 
 .info-value {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #fff;
   font-weight: 600;
 }
