@@ -42,4 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   lazyImages.forEach(lazyLoad);
+
+  const video = document.querySelector('.hero-video');
+  const youtubeFallback = document.getElementById('youtube-fallback');
+
+  if (video) {
+    video.addEventListener('error', () => {
+      video.style.display = 'none';
+      youtubeFallback.style.display = 'block';
+      // Only load YouTube if the MP4 fails
+      youtubeFallback.src = youtubeFallback.dataset.src;
+    });
+  }
 });
