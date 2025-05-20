@@ -1,1 +1,48 @@
-.project-container{max-width:1800px;margin:0 auto;padding:32px;margin-top:100px}.project-header{margin-bottom:48px}.project-title{font-size:3rem;font-weight:700;color:#fff;margin:0 0 16px 0;font-family:Inter,sans-serif}.project-subtitle{font-size:1.25rem;color:rgba(255,255,255,.8);margin:0;line-height:1.6;font-family:Inter,sans-serif}.project-content{display:flex;flex-direction:column;gap:48px}@media (max-width:768px){.project-container{padding:16px;margin-top:80px}.project-title{font-size:2rem}.project-subtitle{font-size:1.1rem}}
+.project-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 32px;
+    margin-top: 100px;
+}
+
+.project-header {
+    margin-bottom: 48px;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 16px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-container {
+        padding: 16px;
+        margin-top: 80px;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-subtitle {
+        font-size: 1.1rem;
+    }
+}
